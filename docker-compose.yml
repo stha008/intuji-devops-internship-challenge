@@ -1,0 +1,8 @@
+version: "3.8"  # Specify the Docker Compose file version
+
+services:
+  php-hello-world:
+    container_name: php-hello-world-container  # Optional container name
+    image: hello123  # Build the image from the Dockerfile in the current directory
+    ports:
+      - "8080:80"  # Map port 8080 on the host to port 80 in the container
