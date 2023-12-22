@@ -1,4 +1,5 @@
 # CI/CD Pipeline for PHP Application with Docker and Jenkins
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/b0f5830d-e1ab-45d4-8d3b-1b65a60fb218)
 
 ## Introduction
 This project sets up a Continuous Integration/Continuous Deployment (CI/CD) pipeline for a PHP application using Docker and Jenkins.
