@@ -130,6 +130,6 @@ navigating to URL
 
 
 
- ![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/4145a909-0fef-4ace-bee7-d390e2b459ec)
+
 
 
