@@ -114,21 +114,52 @@ sudo systemctl start jenkins.service
 ```
 ### 9. Creating a freestyle project 
 
-the next step is to create a free style project 
+the next step is to create a free style project:
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/44595ca8-794c-485d-af4b-b1000fae50e8)
+
+After that give general description. 
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/2da783cc-87db-4786-b03c-e37409086799)
+
+
 under source code management select git and give your Reposotories URL and select your branche i.e main/master
-under build step select execute shell and put the following command :
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/5fede706-f0ce-4599-b1c8-340956a01786)
+
+
+under build step select execute shell and put the following command and save it :
 ```
 docker build . -t src
 docker run -p 9000:9000 src
 ```
-and save it. 
-after saving build the project 
-after building the project go to console output it will give you an ip address navigate to it . 
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/5a3e850e-284d-4901-bed7-9f2c0cbea38a)
+
+
+after saving navigate to Workspace there we can see all our github repo. files 
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/c38e01f0-17a8-4442-81d3-46ee8ab285b1)
+
+Navigate to build now to build the project 
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/b70ddde2-a51f-454a-af44-4b57b0483026)
+
+After building the project navigate to console output 
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/772bdf4d-8c86-4588-8c88-cb327bc862b8)
+
+
+if we scroll down it will give you an ip address navigate to it i.e. 172.17.0.2
+
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/3467f774-7262-4314-837c-fd1409ea9af5)
+
 navigating to URL. 
 
-![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/5f8e076a-f7e3-4953-944e-5b2b06df6fed)
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/00e9498b-c76d-4c04-9ffa-a6e7304bf7e7)
 
 
+Thank you !!!
 
 
 
