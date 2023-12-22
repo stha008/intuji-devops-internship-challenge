@@ -88,9 +88,12 @@ services:
       
 ---------------------------------------------
 
-### 8. using the command: docker-compose up to run application  
+### 7. using the command: docker-compose up to run application 
+![aa](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/a6809e4f-7152-4ee0-a6b4-5c51699279a0)
+
+
       
-### 7. installing jenkins 
+### 8. installing jenkins 
 
 the following command is used to install jenkins 
 ----command----------------------
@@ -112,8 +115,9 @@ docker run -p 9000:9000 src
 and save it. 
 after saving build the project 
 after building the project go to console output it will give you an ip address navigate to it . 
+# navigating to URL 
 
-
+![dd](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/d521f140-91e2-45db-b687-d0f85a736f69)
 
  
 
