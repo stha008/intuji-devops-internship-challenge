@@ -1,0 +1,57 @@
+Started by user Ujjwal Shrestha
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/internship_task
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/internship_task/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/stha008/intuji-devops-internship-challenge.git # timeout=10
+Fetching upstream changes from https://github.com/stha008/intuji-devops-internship-challenge.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/stha008/intuji-devops-internship-challenge.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision ede89f13ba53cde5a468adaf6bf3d9fa0bcfa7c0 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ede89f13ba53cde5a468adaf6bf3d9fa0bcfa7c0 # timeout=10
+Commit message: "committing index.php"
+ > git rev-list --no-walk ede89f13ba53cde5a468adaf6bf3d9fa0bcfa7c0 # timeout=10
+[internship_task] $ /bin/sh -xe /tmp/jenkins6687265669959569325.sh
++ docker build . -t src
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  163.8kB
+Step 1/8 : FROM php:8.1-apache
+ ---> d4eca39e23c2
+Step 2/8 : WORKDIR /var/www/html
+ ---> Using cache
+ ---> 8280a8f5ef0b
+Step 3/8 : COPY composer.json .
+ ---> Using cache
+ ---> 570e7f357921
+Step 4/8 : RUN apt-get update && apt-get install -y libzip-dev zip unzip git
+ ---> Using cache
+ ---> d890dc11a5d2
+Step 5/8 : RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+ ---> Using cache
+ ---> df35a28f714b
+Step 6/8 : COPY . .
+ ---> Using cache
+ ---> f934dd50df93
+Step 7/8 : RUN composer install --ignore-platform-reqs
+ ---> Using cache
+ ---> 1cabc7616cc4
+Step 8/8 : CMD ["apache2-foreground"]  # Start the Apache server
+ ---> Using cache
+ ---> 0c6cd842f12f
+Successfully built 0c6cd842f12f
+Successfully tagged src:latest
++ docker run -p 9000:9000 src
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Fri Dec 22 07:26:50.002488 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.57 (Debian) PHP/8.1.26 configured -- resuming normal operations
+[Fri Dec 22 07:26:50.002821 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+172.17.0.1 - - [22/Dec/2023:07:27:01 +0000] "GET / HTTP/1.1" 200 250 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+172.17.0.1 - - [22/Dec/2023:07:27:01 +0000] "GET /favicon.ico HTTP/1.1" 404 488 "http://172.17.0.2/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
