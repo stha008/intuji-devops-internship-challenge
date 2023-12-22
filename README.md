@@ -89,7 +89,8 @@ services:
 ---------------------------------------------
 
 ### 7. using the command: docker-compose up to run application 
-![aa](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/a6809e4f-7152-4ee0-a6b4-5c51699279a0)
+![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/f398c8cf-fbf6-4fdf-ad00-6acd132d0e7c)
+
 
 
       
