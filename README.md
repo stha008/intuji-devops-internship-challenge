@@ -15,7 +15,7 @@ This project sets up a Continuous Integration/Continuous Deployment (CI/CD) pipe
 ### 1. Install Docker
 Using fllowing bash script to install Docker on a Linux machine:
 
-```bash
+```bash```
 #!/usr/bin/env bash
 sudo apt update
 sudo apt install docker.io docker-compose -yqq
@@ -88,7 +88,8 @@ services:
       
 ---------------------------------------------
 
-### 7. using the command: docker-compose up to run application 
+### 7. using the command: docker-compose up to run application
+
 ![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/eeab6160-da64-45d8-b364-de12fe8be6e8)
 
 
