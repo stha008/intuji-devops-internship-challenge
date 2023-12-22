@@ -9,4 +9,4 @@ COPY . .
 
 RUN composer install --ignore-platform-reqs
 
-CMD ["apache2-foreground"]  # Start the Apache server
+CMD ["apache2-foreground"]  
