@@ -112,7 +112,7 @@ docker run -p 9000:9000 src
 and save it. 
 after saving build the project 
 after building the project go to console output it will give you an ip address navigate to it . 
-![image](https://github.com/stha008/intuji-devops-internship-challenge/assets/124485115/5112e2c7-ebf5-4ab0-a7ba-4e3441131d61)
+
 
 
  
